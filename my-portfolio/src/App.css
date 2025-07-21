@@ -1,0 +1,35 @@
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  animation: neon 3s ease-in-out infinite;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  opacity: 0;
+  animation: fadeInUp 2s ease forwards;
+}
+
+@keyframes neon {
+  0%, 100% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #0ff, 0 0 20px #0ff;
+  }
+  50% {
+    text-shadow: 0 0 2px #fff, 0 0 4px #0ff, 0 0 8px #0ff;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

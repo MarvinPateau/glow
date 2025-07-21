@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(60deg, #0f0c29, #302b63, #24243e);
+  background-size: 400% 400%;
+  animation: gradient-bg 15s ease infinite;
+  color: #ffffff;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+@keyframes gradient-bg {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
